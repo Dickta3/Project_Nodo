@@ -6,15 +6,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-//  Password contraseña
-
-const password = "oyasumipunpun";
-
+//  Password contrase
+const password = "oyasumipunpun"; 
 const conec = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password,
-  database: "nodomobiliario",
+    host: "localhost",
+    user: "root",
+    password,
+    database: "nodomobiliario",
 });
 
 conec.connect((err) => {
