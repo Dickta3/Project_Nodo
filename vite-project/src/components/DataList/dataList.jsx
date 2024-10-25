@@ -8,7 +8,7 @@ export function FetchingData() {
       .then((respuesta) => respuesta.json())
       .then((data) => {
         setDatos(data);
-        console.log(data)
+        console.log(data);
       });
   }, []);
   return (
